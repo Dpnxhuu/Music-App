@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    scroll-behavior: smooth;
+
+    /* font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal; */
+}
+
+html,
+body {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100dvh;
+    overflow: scroll;
+    /* page scroll band */
+}
+
+.container {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    /* overflow-y:  scroll; */
+    /* page scroll band */
+}
+
+/* TOP NAV */
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    flex-shrink: 0;
+    background-color: seagreen;
+    position: sticky;
+    top: 0px;
+}
+
+/* MAIN CONTENT (sirf yahin scroll) */
+main {
+    width: 100%;
+    flex: 1;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+/* BOTTOM PLAYER */
+footer {
+    width: 100%;
+    height: 100px;
+    flex-shrink: 0;
+    background-color: rgb(68, 186, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* justify-content: center; */
+    position: sticky;
+    bottom: 0px;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+}
+
+#myProgressBar {
+    width: 90%;
+}
+
+#myProgressBar {
+    accent-color: #ffffff;
+    /* filled (progress) part = white */
+    background: #e0e0e0;
+    /* remaining track = light grey */
+    height: 6px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    color: rgba(30, 30, 30, 0.456);
+    transition: all 0.3s ease;
+}
+
+.icons i {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.fa-play-circle {
+    color: rgb(33, 33, 33);
+}
+
+i:active {
+    transform: scale(0.9);
+    color: black;
+
+}
+
+nav ul li img:active {
+    transform: scale(0.9);
+}
+
+@media (min-width: 768px) {
+    i:hover {
+        color: black;
+    }
+.song:hover{
+  background: #1a1a1a;
+}
+}
+
+.search{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input{
+   background-color: rgba(255, 255, 255, 0.842);
+   outline: none;
+   border: none;
+   color: rgb(0, 0, 0);
+   height: 10px; 
+   width: 90%;
+   border-radius: 20px;
+   padding: 20px;
+   font-size: 16px;
+   overflow: hidden;
+}
+
+.search i{
+    position: relative;
+    left: -40px;
+    color: black;
+    cursor: pointer;
+}   
+
+.liked-song{
+    width: 100%;
+    margin-top: 70px;
+    padding-left: 40px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2px;
+    background-color: rgba(128, 128, 128, 0.205);
+}
+
+.liked-song p{
+    color: white;
+    font-size: 25px;
+}
+.profile{
+    color: white;
+    font-size: 12px;
+}
+
+.duration{
+    color: rgba(255, 255, 255, 0.702);
+    font-size: 12px;
+}
+
+.line{
+    background-color: rgba(123, 123, 123, 0.63);
+    width: 98%;
+    height: 2px;
+    margin-top: 5px;
+}
+.songList{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+.song{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background:#121212;
+  border-radius: 8px;
+  width: 90%;
+  color: #fff;
+  margin-top: 5px;
+    cursor: pointer;
+}
+
+.cover{
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.info{
+  flex: 1;
+}
+
+.title{
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.artist{
+  font-size: 13px;
+  color: #b3b3b3;
+  margin-top: 2px;
+}
+
+.menu{
+  font-size: 20px;
+  color: #b3b3b3;
+  cursor: pointer;
+}
+.song:active .title{
+  color: #c4c4c4;
+  transform: scale(0.98);
+}
