@@ -45,6 +45,8 @@ nav {
     background-color: seagreen;
     position: sticky;
     top: 0px;
+    cursor: pointer;
+    z-index: 999;
 }
 nav ul li:active {
     transform: scale(0.9);
