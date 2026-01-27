@@ -8,7 +8,8 @@
     font-weight: 400;
     font-style: normal;
     scroll-behavior: smooth;
-
+    -webkit-tap-highlight-color: transparent;
+    /* cursor: pointer; */
     /* font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal; */
@@ -44,6 +45,9 @@ nav {
     background-color: seagreen;
     position: sticky;
     top: 0px;
+}
+nav ul li:active {
+    transform: scale(0.9);
 }
 
 /* MAIN CONTENT (sirf yahin scroll) */
@@ -102,6 +106,7 @@ nav ul li img {
     background: #e0e0e0;
     /* remaining track = light grey */
     height: 6px;
+    cursor: pointer;
 }
 
 .icons {
