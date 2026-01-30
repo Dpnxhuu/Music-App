@@ -2,7 +2,7 @@ console.log("Music App Loaded");
 
 // --- 1. Variables & Initialization ---
 let songIndex = 0;
-let audioElement = new Audio("Jo Tum Mere Ho.m4a");
+let audioElement = new Audio();
 let masterPlay = document.getElementById("masterPlay");
 let myProgressBar = document.getElementById("myProgressBar");
 let masterSongName = document.getElementById("masterSongName"); // Ensure ye ID HTML mein ho
@@ -101,7 +101,11 @@ const playMusic = () => {
 
 // Handle Master Play/Pause Click
 masterPlay.addEventListener("click", () => {
-  if (audioElement.paused || audioElement.currentTime <= 0) {
+  if (!audioElement.src) {
+      audioElement.src = Song[0].filePath; 
+      songIndex = 0;
+  }
+  else if (audioElement.paused || audioElement.currentTime <= 0) {
     audioElement.play();
     masterPlay.classList.remove("fa-play-circle");
     masterPlay.classList.add("fa-pause-circle");
