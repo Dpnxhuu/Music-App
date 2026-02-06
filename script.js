@@ -127,7 +127,7 @@ audioElement.addEventListener("timeupdate", () => {
 });
 
 // Seekbar Drag Functionality
-myProgressBar.addEventListener("change", () => {
+myProgressBar.addEventListener("input", () => {
   audioElement.currentTime =
     (myProgressBar.value * audioElement.duration) / 100;
 });
