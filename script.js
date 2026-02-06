@@ -25,7 +25,7 @@ let Song = [
     songName: "Yeh Dooriyaan",
     artist: "Arijit Singh",
     filePath: "Yeh Dooriyan.mp3",
-    coverPath: "yeh dooriyaan.png",
+    coverPath: "Yeh Dooriyaan.png",
   },
   {
     songName: "Is This Love",
@@ -49,7 +49,7 @@ let Song = [
     songName: "Sajni",
     artist: "The Jal Band",
     filePath: "Sajni.mp3",
-    coverPath: "sajni.png",
+    coverPath: "Sajni.png",
   },
   {
     songName: "Sawaar Loon",
@@ -61,7 +61,7 @@ let Song = [
     songName: "Satranga",
     artist: "Arijit Singh",
     filePath: "Satranga.mp3",
-    coverPath: "satranga.png",
+    coverPath: "Satranga.png",
   },
 ];
 
