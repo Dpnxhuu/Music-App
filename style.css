@@ -8,11 +8,10 @@
     font-weight: 400;
     font-style: normal;
     scroll-behavior: smooth;
+    user-select: none;
+    -webkit-user-select: none;
     -webkit-tap-highlight-color: transparent;
-    /* cursor: pointer; */
-    /* font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-style: normal; */
+    
 }
 
 html,
